@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>San Valentín Universo</title>
+</head>
+<body>
+    <!-- FONDO DE ESTRELLAS ANIMADO -->
+    <div id="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    <div class="main"></div>
+    <div id="intro">
+        <h1>Desde que llegaste, mi universo tiene sentido ✨</h1>
+        <button id="startBtn">Explorar nuestro cielo</button>
+    </div>
+
+    <div id="universe" style="display:none;">
+        <!-- Luna -->
+        <div id="moon"></div>
+
+        <!-- Nebulosas -->
+        <div class="nebula nebula1"></div>
+        <div class="nebula nebula2"></div>
+
+        <!-- Constelaciones SVG -->
+        <svg id="constellations"></svg>
+
+        <!-- Estrellas -->
+        <div class="star" style="top:20%; left:30%;" data-text="Nuestro primer mensaje 💬"></div>
+        <div class="star" style="top:50%; left:60%;" data-text="Nuestra primera cita 💕"></div>
+        <div class="star" style="top:70%; left:25%;" data-text="El día que supe que te quería 🌹"></div>
+        <div class="star" style="top:35%; left:75%;" data-text="Cada risa contigo ✨"></div>
+        <div class="star" style="top:40%; left:50%;" data-text="Nuestro primer mensaje 💬"></div>
+        <div class="star" style="top:30%; left:30%;" data-text="Nuestra primera cita 💕"></div>
+        <div class="star" style="top:6%; left:65%;" data-text="El día que supe que te quería 🌹"></div>
+        <div class="star" style="top:85%; left:95%;" data-text="Cada risa contigo ✨"></div>
+
+        <!-- Corazón -->
+        <div id="finalStar">❤️</div>
+    </div>
+
+    <!-- POPUP SOBRE + CARTA -->
+    <div id="popup">
+        <div class="contenedor">
+            <div class="envoltura-sobre">
+                <div class="sobre">
+                    <div class="carta">
+                        <div class="contenido" id="popupText">
+                            <!-- Aquí se escribirá con typeWriter -->
+                        </div>
+                    </div>
+                </div>
+                <div class="corazon"></div>
+                <div class="solapa-derecha"></div>
+                <div class="solapa-izquierda"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Música ambiental -->
+    <audio id="music" src="audio/ambient.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
